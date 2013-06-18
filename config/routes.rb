@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-
+  resources :users
   match "/users/new" => "users#new"
   match "/users/:id" => "users#show"
   match "/pages" => "pages#home"
